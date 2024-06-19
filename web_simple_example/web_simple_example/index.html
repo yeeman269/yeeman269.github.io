@@ -3,32 +3,31 @@
 <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+});
+</script>
 </head>
 <body>
-
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+    
+    <p>If you double-click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
-<p>.click(function(){
-  $(this).hide();
-});
-<h2>This is a smaller Heading</h2>
-<p>This is a paragraph...<br>with break<br>lines</p>
-<p>.mousedown(function(){
-  alert("Mouse down over p1!");
-});
-<h3> item list </h3>
-<ul>
-    <li>item 1</li>
-    <li style="color: blue">item 2 and style</li>
-    <li><a href="https://www.google.com">with link</a></li>
-</ul>
 
-<h3>An image with link</h3>
-<a href="https://github.com/gorisanson/pikachu-volleyball">
-    <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png">
-</a>
-
-<p class="large">style from "/style.css"</p>
-
-</body>
-</html>
